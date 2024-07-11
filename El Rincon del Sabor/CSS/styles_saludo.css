@@ -1,0 +1,121 @@
+/* styles_saludo.css */
+body {
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f1e5; /* Un tono cálido */
+    color: #793d20; /* Marrón oscuro para el texto */
+}
+
+header {
+    background-color: #6c4836;
+    color: #f8f1e5;
+    padding: 20px;
+    text-align: center;
+}
+
+img{
+    display: block;
+    max-width: 20%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 20px; /* Espacio entre imágenes (ajustable) */
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    transition: transform 0.3s ease-in-out;
+}
+
+
+img:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #6c4836;
+    color: #f8f1e5;
+    text-align: center;
+    padding: 20px;
+    position:relative;
+    bottom: 0;
+    width: 100%;
+    font-family: cursive;
+}
+
+/* Estilos para los enlaces de redes sociales en el footer */
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.social-links a:hover {
+    color: #be651b; /* Cambiar a tu color de elección al pasar el ratón */
+}
+
+#mensaje{
+    background-color: #d7bb83;
+}
+
+/* Agrega estilos adicionales según sea necesario */
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #f8f1e5;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+
+button[type="submit"]:hover {
+    background-color: #f8f1e5;
+}
+
+
+#logo2{
+    width: 150px;
+    height: 45px;
+    }
+    
+    #instagram{
+        width: 150px;
+        height: 45px;
+    }
+    
+    #facebook{
+         width: 150px;
+        height: 45px;
+    }

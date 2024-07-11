@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promociones</title>
+    <link rel="stylesheet" href="/CSS/styles_Promociones.css">
+    <link rel="icon" type="image/png" href="/resources/el rincon del sabor.png">
+  </head>
+<body>
+    <header>
+        <h1>Promociones </h1>
+        <p>Esta sección está hecha para verificar y detallar promociones.</p>
+        <img src="/resources/descarga (3).jfif"  alt="">
+        <button type="submit" href="/index.html" ><a href="/HTML/index.html">Regresar</a></button>
+    </header>
+
+    <br>
+
+    <div class="container">
+        <h2>Promociones</h2> 
+        <div class="promotion">
+            <h3>Descubre el Otoño</h3>
+            <p>Prueba nuestras nuevas bebidas de otoño y disfruta de un 15% de descuento en tu favorita.</p>
+            <p>Fecha: 10 de septiembre de 2024</p>
+            <button class="mostrarMensajeBtn" type="button">Checar Promoción</button>
+        </div>
+    </div>
+
+
+    <div class="container">
+      <h2>Promociones</h2>
+      <div class="promotion">
+        <h3>Festival de Sabores Navideños</h3>
+        <p>Celebra la temporada navideña con nuestras deliciosas opciones festivas. ¡Descuentos exclusivos!</p>
+        <p>Fecha: 1 de diciembre de 2024</p>
+        <button class="mostrarMensajeBtn" type="button">Checar Promoción</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="promotion">
+        <h3>Día Internacional del Café</h3>
+        <p>En honor al café, todas las bebidas a base de café con un 20% de descuento este día especial.</p>
+        <p>Fecha: 1 de octubre de 2024</p>
+        <button class="mostrarMensajeBtn" type="button">Checar Promoción</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="promotion">
+        <h3>Fin de Semana Relajado</h3>
+        <p>Desconéctate del estrés. Bebidas a mitad de precio durante todo el fin de semana.</p>
+        <p>Fecha: 18 al 20 de octubre de 2024</p>
+        <button class="mostrarMensajeBtn" type="button">Checar Promoción</button>
+
+      </div>
+    </div>
+
+   <div class="container">   
+      <div class="promotion">
+        <h3>Día del Trabajador</h3>
+        <p>Recompensamos tu arduo trabajo. Presenta tu identificación laboral y obtén un 10% de descuento.</p>
+        <p>Fecha: 1 de mayo de 2024</p>
+        <button class="mostrarMensajeBtn" type="button">Checar Promoción</button>
+     </div>
+    </div>
+  
+    <div class="container">  
+      <div class="promotion">
+          <h3>Noche de Película</h3>
+          <p>Disfruta de una película con nosotros. Café y palomitas al 2x1 durante la proyección.</p>
+          <p>Fecha: 8 de agosto de 2024</p>
+          <button class="mostrarMensajeBtn" type="button">Checar Promoción</button>
+      </div>
+    </div>
+
+  
+    <div class="container">  
+      <div class="promotion">
+        <h3>Reunión de Amigos</h3>
+        <p>Invita a tus amigos y recibe un postre gratis por cada amigo que te acompañe.</p>
+        <p>Fecha: 15 de junio de 2024</p>
+        <button class="mostrarMensajeBtn" type="button">Checar Promoción</button>
+      </div>
+    </div>
+
+
+    <div class="container">        
+      <div class="promotion">
+          <h3>Primavera Energética</h3>
+          <p>Carga tu energía con nuestras bebidas primaverales. Descuentos del 15% en bebidas energéticas.</p>
+          <p>Fecha: 5 de abril de 2024</p>
+          <button class="mostrarMensajeBtn" type="button">Checar Promoción</button>
+      </div>
+    </div>
+
+    <div class="container"> 
+      <div class="promotion">
+          <h3>Día del Estudiante</h3>
+          <p>Estudiantes, presenten su identificación y disfruten de un 10% de descuento en todas las bebidas.</p>
+          <p>Fecha: 21 de septiembre de 2024</p>
+          <button class="mostrarMensajeBtn" type="button">Checar Promoción</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="promotion">
+          <h3>Día de las madres</h3>
+          <p>Para celebrar el día a la persona que te dio la vida Puedes regalarle un café al 20% de descuento</p>
+          <p>Fecha: 10 de mayo de 2024</p>
+          <button class="mostrarMensajeBtn" type="button">Checar Promoción</button>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="promotion">
+          <h3>Dia importante</h3>
+          <p>regalale un combo de 3 productos a tu persona favorita</p>
+          <p>Fecha: 29 de junio de 2024</p>
+          <button class="mostrarMensajeBtn" type="button">Checar Promoción</button>
+      </div>
+    </div>
+    <!-- Aquí van las demás promociones -->
+    
+
+    <footer>
+        <p>&copy; 2024 Cafetería Ejemplo. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          const buttons = document.querySelectorAll('.mostrarMensajeBtn');
+
+          buttons.forEach(button => {
+              button.addEventListener('click', function() {
+                  const promotion = this.parentElement;
+                  const fechaTexto = promotion.querySelector('p').innerText.trim().split('Fecha: 29/06/2024')[1];
+                  const fechaPromocion = new Date(fechaTexto);
+                  const fechaHoy = new Date();
+
+                  if (fechaHoy <= fechaPromocion) {
+                      const mensaje = `Promoción vigente: ${promotion.querySelector('h3').innerText}\n${promotion.querySelector('p').innerText}`;
+                      alert(mensaje);
+                  } else {
+                      alert('Esta promoción ya no está vigente.');
+                  }
+              });
+          });
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,544 @@
+
+body {
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f1e5; /* Un tono cálido */
+    color: #793d20; /* Marrón oscuro para el texto */
+}
+
+
+header {
+    background-size: cover;
+    color: #793d20;
+    text-align: center;
+   padding: 0%;    
+}
+
+.headerh1{
+    color: #000000;
+}
+
+#logo {
+    width: 80px; /* Ajusta el ancho según tus necesidades */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+    margin-top: 0px; /* Ajusta la separación superior según tus necesidades */
+    margin-right: 1px; /* Ajusta la separación derecha según tus necesidades */
+}
+
+#menu{
+    text-align: center;
+}
+
+
+
+nav {
+    background-color: #8a614c; /* Marrón medio */
+    padding: 1em;
+    text-align: center;
+}
+
+.nav1 {
+    background-color: rgb(190, 148, 68); /* Marrón medio */
+    padding: 1em;
+    text-align: center;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+#menu-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu-list li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* Estilo para las imágenes en el menú */
+#menu img {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efecto de escala al pasar el ratón sobre la imagen */
+#menu img:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+
+.hidden {
+    display: none;
+}
+
+#message-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #f8f1e5; /* Un tono cálido */
+    color: #793d20; /* Marrón oscuro para el texto */
+    border-radius: 5px;
+    text-align: center;
+}
+
+#login-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #793d20;
+    color: #f8f1e5;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+#color{
+    color: #793d20;
+}
+
+
+.settings-menu-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+}
+.settings-menu-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.settings-menu-content a:hover {
+    background-color: #f1f1f1;
+}
+
+#menu-list li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    margin: 1em;
+    padding: 1em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    color: #6c4836; /* Marrón oscuro */
+}
+
+.h3{
+    color: #793d20;
+}
+
+img {
+    display: block;
+    max-width: 20%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px; /* Espacio entre imágenes (ajustable) */
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+   
+}
+
+
+    
+
+    footer {
+        background-color: #6c4836;
+        color: #f8f1e5;
+        text-align: center;
+        padding: 20px;
+        position:static;
+        bottom: 0;
+        width: 100%;
+    }
+
+    footer p {
+        margin: 0;
+        font-family: cursive;
+    }
+
+/* Estilo para el formulario */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+label {
+    display: block;
+    margin-bottom: 5px;
+  }
+input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+
+
+button[type="submit"]{
+    padding: 10px 20px;
+    background-color: #6c4836;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color:#c77661;
+}
+
+#mostrarMensajeBtn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #6c4836;
+    color: #f8f1e5; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#mostrarMensajeBtn:hover {
+    background-color: #a15b48;
+}
+
+#mensajeVenta {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    z-index: 9999;
+}
+
+#cerrarMensajeBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #888;
+}
+
+#cerrarMensajeBtn:hover {
+    color: #555;
+}
+
+
+#mensajeVenta {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    z-index: 9999;
+}
+
+#mensajeVenta p {
+    margin-bottom: 20px;
+}
+
+#continuarBtn, #retrocederBtn {
+    padding: 10px 20px;
+    background-color: #6c4836;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+#continuarBtn:hover, #retrocederBtn:hover {
+    background-color: #a15b48;
+}
+
+/*separacion*/
+
+#iniciarJuego{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #6c4836;
+    color: #f8f1e5; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#iniciarJuego:hover {
+    background-color: #a15b48;
+}
+
+#mensajeJuego{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    z-index: 9999;
+}
+
+#cerrarMensaje{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #888;
+}
+
+#cerrarMensaje:hover {
+    color: #555;
+}
+
+
+#mensajeJuego{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    z-index: 9999;
+}
+
+#mensajeJuego p {
+    margin-bottom: 20px;
+}
+
+#continuar, #retroceder{
+    padding: 10px 20px;
+    background-color: #6c4836;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+#continuar:hover, #retroceder:hover {
+    background-color: #a15b48;
+}
+
+
+
+
+
+/* Estilo para el mensaje de confirmación */
+#confirmationMessage {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #d4edda;
+    color: #155724;
+    display: none; /* Ocultar inicialmente */
+}
+
+
+    #menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .category {
+        flex: 1;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .category ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .category h3 {
+        border-bottom: 1px solid #ccc;
+    }
+
+    .category img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    h1 {
+        color: #fcf9f8; /* Marrón oscuro */
+        text-align: center;
+    }
+
+.evento {
+    background-color: #ecf0f1; /* Color de fondo del contenedor del evento */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease-in-out; /* Efecto de transición suave */
+}
+
+.evento:hover {
+    transform: scale(1.05); /* Escala ligeramente en el hover */
+}
+
+
+#descripcion {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #c77661;
+}
+
+p {
+    line-height: 1.6;
+}
+
+
+
+
+
+.imagen {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+#promociones{
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Estilos para los enlaces de redes sociales en el footer */
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    color:#f8f1e5;
+}
+
+.social-links a:hover {
+    color: #be651b; /* Cambiar a tu color de elección al pasar el ratón */
+}
+
+
+.imagenPersonalizada {
+    width: 300px; /* ajusta el ancho según tus necesidades */
+    height: auto; /* mantiene la proporción original */
+    size-adjust: .1px;
+    /* o puedes establecer un valor específico para la altura si es necesario */
+}
+
+ /* Agrega un estilo base para las promociones */
+ .promotion {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease; /* Agrega una transición para el efecto */
+}
+
+/* Agrega el efecto de aumento al pasar el mouse */
+.promotion:hover {
+    transform: scale(1.1);
+}
+
+#logo2{
+width: 150px;
+height: 45px;
+}
+
+#instagram{
+    width: 150px;
+    height: 45px;
+}
+
+#facebook{
+     width: 150px;
+    height: 45px;
+}
+
+.quieroBtn {
+    padding: 10px 20px;
+    background-color: #6c4836;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quieroBtn:hover {
+    background-color: #af604a;
+}

@@ -1,0 +1,175 @@
+body {
+    font-family: cursive;
+    background-color: #f8f1e5; /* Un tono cálido */
+    color: #793d20; /* Marrón oscuro para el texto */
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    background-color: #6c4836;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position:relative;
+    bottom: 0;
+    width: 100%;
+    font-family: cursive;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+h1 {
+  color: #f5f2f0; /* Marrón oscuro para el texto */
+  }
+h2 {
+  color: #793d20; /* Marrón oscuro para el texto */
+  }
+p {
+    line-height: 1.5;
+  }
+a {
+  color: #793d20; /* Marrón oscuro para el texto */
+    text-decoration: none;
+  }
+a:hover {
+    text-decoration: underline;
+  }
+
+
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #f8f1e5;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+}
+
+button[type="submit"]:hover {
+  background-color: #f8f1e5;
+}
+
+
+
+
+.mostrarMensajeBtn{
+  position:sticky;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #6c4836;
+  color: #f8f1e5; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#mostrarMensajeBtn:hover {
+  background-color: #a15b48;
+}
+
+ /* Agrega un estilo base para las promociones */
+ .promotion {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease; /* Agrega una transición para el efecto */
+}
+
+/* Agrega el efecto de aumento al pasar el mouse */
+.promotion:hover {
+  transform: scale(1.1);
+}
+
+img {
+  display: block;
+  max-width: 20%;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 50px; /* Espacio entre imágenes (ajustable) */
+  border-radius: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+ 
+}
+
+footer {
+  background-color: #6c4836;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position:relative;
+  bottom: 0;
+  width: 100%;
+  font-family: cursive;
+}
+
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+label {
+    display: block;
+    margin-bottom: 5px;
+  }
+input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+button {
+    background-color: #009688;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+button:hover {
+    background-color: #00796b;
+  }
+.cuerpoSaludo{
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background-color: #edb5b5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  .saludo {
+    text-align: center;
+  }
+
+  #logo2{
+    width: 150px;
+    height: 45px;
+    }
+    
+    #instagram{
+        width: 150px;
+        height: 45px;
+    }
+    
+    #facebook{
+         width: 150px;
+        height: 45px;
+    }

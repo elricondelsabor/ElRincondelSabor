@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Rincon de sabor</title>
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="icon" type="image/png" href="/resources/el rincon del sabor.png">
+</head>
+<body>
+    <header class="headerimg">
+        <div class="settings-menu">
+            <span onclick="toggleSettingsMenu()"> <img id="logo" src="/resources/el rincon del sabor.png" alt=""></span>
+            <div class="settings-menu-content" id="settingsMenu">
+                <a href="#">Gestionar cuenta</a>
+                <a href="#" id="logoutButton">Cerrar sesión</a>
+            </div>
+        </div>
+        <script>
+            function toggleSettingsMenu() {
+                const settingsMenu = document.getElementById('settingsMenu');
+                settingsMenu.style.display = settingsMenu.style.display === 'block' ? 'none' : 'block';
+            }
+    
+            document.addEventListener('DOMContentLoaded', function() {
+                const logoutButton = document.getElementById('logoutButton');
+    
+                logoutButton.addEventListener('click', function() {
+                    localStorage.removeItem('loggedIn');
+                    localStorage.removeItem('username');
+                    alert('Sesión cerrada exitosamente.');
+                    window.location.href = "/HTML/index.html"; // Redirigir a la página principal u otra página
+                });
+            });
+        </script>
+        <h1 class="headerh1">El Rincon del sabor</h1>
+        
+    </header>
+
+   <nav>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <ul id="menu-list">
+            <li><a href="#descripcion">Descripcion</a></li>
+            <li><a href="#menu">Menú</a></li>
+            <li><a href="#promociones">Promociones</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div id="message-container" class="hidden">
+        <button id="cerrarMensaje">x</button>
+        <p>Puedes seguir disfrutando de la experiencia de El Rincón del Sabor si inicias sesión</p>
+        <button id="login-button">Iniciar Sesión</button>
+    </div>
+    
+    <script src="/JavaScript/script.js"></script>
+
+    <section id="descripcion">
+        <h2>Descripcion</h2>
+        <p>Bienvenido al Rincon del sabor, donde cada taza es una experiencia y cada rincón cuenta una historia. Sumérgete en un ambiente acogedor y disfruta de nuestro exquisito café, cuidadosamente elaborado para despertar tus sentidos. Con sabores artesanales y un toque de calidez, hacemos de cada visita un momento especial. ¡Ven y deja que nuestros aromas te guíen a través de una experiencia única en cada sorbo!</p>
+    </section>
+
+    <section id="menu">
+        <h1>Menu</h1>
+        <div class="category BC">
+            <h3>Bebidas Calientes</h3>
+            <ul>
+                <li>Café Americano - $38.00 <img src="/resources/Cafe americano.png" alt=""></li>
+                <li>Expreso - $25.00 <img src="/resources/descarga.jfif" alt=""></li>
+                <li>Latte - $50.00 <img src="/resources/descarga (1).jfif" alt=""></li>
+            </ul>
+        </div>
+
+        <div class="category BF">
+            <h3>Bebidas Frías</h3>
+            <ul>
+                <li>Café helado - $60.00 <img src="/resources/descarga (2).jfif" alt=""></li>
+                <li>Frappé de café - $40.00 <img src="/resources/descarga (3).jfif" alt=""></li>
+                <li>Té helado - $25.00 <img src="/resources/descarga (4).jfif" alt=""></li>
+            </ul>
+        </div>
+
+        <div class="category AC">
+            <h3>Acompañamientos</h3>
+            <ul>
+                <li>Croissants - $30.00 <img src="/resources/croissants.jfif" alt=""></li>
+                <li>Muffins - $40.00 <img src="/resources/muffins.jfif" alt=""></li>
+                <li>Galletas caseras - $30.00 <img src="/resources/galletas caseras.jfif" alt=""></li>
+            </ul>
+        </div>
+
+        <div class="category SP">
+            <h3>Sándwiches y Paninis</h3>
+            <ul>
+                <li>Sándwich de pollo a la parrilla - $30.00 <img src="/resources/sandwich de pollo a la parrilla.jfif" alt=""></li>
+                <li>Panini de jamón y queso - $20.00 <img src="/resources/Panini de jamón y queso.jfif" alt=""></li>
+                <li>Vegetariano - $50.00 <img src="/resources/Vegetariano (con aguacate, queso y vegetales).jfif" alt=""></li>
+            </ul>
+        </div>
+    </section>
+    
+    <button id="mostrarMensajeBtn" type="button">Iniciar una venta</button>
+
+    <div id="mensajeVenta" style="display: none;">
+        <button id="cerrarMensajeBtn">x</button>
+        <p>Este es un simulador de una venta</p>
+        <button id="continuarBtn">Continuar</button>
+        <button id="retrocederBtn">Retroceder</button>
+    </div>
+
+    <script>
+        document.getElementById('mostrarMensajeBtn').addEventListener('click', function() {
+            document.getElementById('mensajeVenta').style.display = 'block';
+        });
+
+        document.getElementById('retrocederBtn').addEventListener('click', function() {
+            window.location.href = "/HTML/index.html"; // Cambia la URL a la página principal
+        });
+
+        document.getElementById('continuarBtn').addEventListener('click', function() {
+            window.location.href = "/HTML/Ventas.html"; // Cambia la URL a la página principal
+        });
+
+        document.getElementById('cerrarMensajeBtn').addEventListener('click', function() {
+        document.getElementById('mensajeVenta').style.display = 'none';
+        });
+    </script>
+
+
+<button id="iniciarJuego" type="button">Iniciar juego</button>
+
+<div id="mensajeJuego" style="display: none;">
+    <button id="cerrarMensaje">x</button>
+    <p>Puedes disfrutar de un juego elaborado para entretenerte un rato</p>
+    <button id="continuar">Continuar</button>
+    <button id="retroceder">Retroceder</button>
+</div>
+
+<script>
+    document.getElementById('iniciarJuego').addEventListener('click', function() {
+        document.getElementById('mensajeJuego').style.display = 'block';
+    });
+
+    document.getElementById('retroceder').addEventListener('click', function() {
+        window.location.href = "/HTML/index.html"; // Cambia la URL a la página principal
+    });
+
+    document.getElementById('continuar').addEventListener('click', function() {
+        window.location.href = "/HTML/Juego.html"; // Cambia la URL a la página principal
+    });
+
+    document.getElementById('cerrarMensaje').addEventListener('click', function() {
+    document.getElementById('mensajeJuego').style.display = 'none';
+    });
+</script>
+
+    <section id="promociones">
+        <h2>Promociones</h2>
+        <div class="promotion">
+            <h3>Descubre el Otoño</h3>
+            <p>Prueba nuestras nuevas bebidas de otoño y disfruta de un 15% de descuento en tu favorita.</p>
+            <p>Fecha: 10 de septiembre de 2024</p>
+
+        </div>
+    <br>
+        <div class="promotion">
+            <h3>Semana del Cliente Fiel</h3>
+            <p>Agradecemos tu lealtad. Presenta tu tarjeta de cliente frecuente y recibe un café gratis.</p>
+            <p>Fecha: 3 al 9 de octubre de 2024</p>
+
+        </div>
+    <br>
+        <div class="promotion">
+            <h3>Festival de Sabores Navideños</h3>
+            <p>Celebra la temporada navideña con nuestras deliciosas opciones festivas. ¡Descuentos exclusivos!</p>
+            <p>Fecha: 1 de diciembre de 2024</p>
+        </div>
+    <br>
+        <div class="promotion">
+            <h3>Día Internacional del Café</h3>
+            <p>En honor al café, todas las bebidas a base de café con un 20% de descuento este día especial.</p>
+            <p>Fecha: 1 de octubre de 2024</p>
+        </div>
+    <br>
+        <div class="promotion">
+            <h3>Fin de Semana Relajado</h3>
+            <p>Desconéctate del estrés. Bebidas a mitad de precio durante todo el fin de semana.</p>
+            <p>Fecha: 18 al 20 de octubre de 2024</p>
+
+        </div>
+    <br>
+        <div class="promotion">
+            <h3>Día del Trabajador</h3>
+            <p>Recompensamos tu arduo trabajo. Presenta tu identificación laboral y obtén un 10% de descuento.</p>
+            <p>Fecha: 1 de mayo de 2024</p>
+
+        </div>
+    <br>
+        <div class="promotion">
+            <h3>Noche de Película</h3>
+            <p>Disfruta de una película con nosotros. Café y palomitas al 2x1 durante la proyección.</p>
+            <p>Fecha: 8 de agosto de 2024</p>
+
+        </div>
+    <br>
+        <div class="promotion">
+            <h3>Reunión de Amigos</h3>
+            <p>Invita a tus amigos y recibe un postre gratis por cada amigo que te acompañe.</p>
+            <p>Fecha: 15 de junio de 2024</p>
+
+        </div>
+    <br>
+        <div class="promotion">
+            <h3>Primavera Energética</h3>
+            <p>Carga tu energía con nuestras bebidas primaverales. Descuentos del 15% en bebidas energéticas.</p>
+            <p>Fecha: 5 de abril de 2024</p>
+            
+        </div>
+    <br>
+        <div class="promotion">
+            <h3>Día del Estudiante</h3>
+            <p>Estudiantes, presenten su identificación y disfruten de un 10% de descuento en todas las bebidas.</p>
+            <p>Fecha: 21 de septiembre de 2024</p>
+        </div>
+
+    <br>
+        <div class="promotion">
+            <h3>Día de las madres</h3>
+            <p>Para celebrar el día a la persona que te dio la vida Puedes regalarle un café al 20% de descuento</p>
+            <p>Fecha: 10 de mayo de 2024</p>
+        </div>
+        <div class="promotion">
+            <h3>Dia importante</h3>
+            <p>regalale un combo de 3 productos a tu persona favorita</p>
+            <p>Fecha: 29 de junio de 2024</p>
+        </div>
+
+
+        
+    <a href="/HTML/Promociones.html" class="quieroBtn">Ir a la seccion de Promociones</a>
+       
+        <!-- Agrega más promociones con sus respectivas fechas -->
+    
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Información de contacto de tu cafetería.</p>
+
+        <style>
+
+            h2{
+                text-align: center;
+            }
+
+            p{
+                text-align: center;
+            }
+        </style>
+        
+        <!-- Formulario de contacto -->
+          <!-- Formulario de contacto -->
+          <form id="contactForm" action="/HTML/saludo.html">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            <br>    
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+
+        <div id="confirmationMessage"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Cafetería Ejemplo. Todos los derechos reservados.</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/me/" target="_blank"> <img id="facebook" src="/resources/facebook-box-fill.svg" alt="">  Facebook</a>
+            <a href="https://www.instagram.com/elrincondelsabor9615/" target="_blank">   <img id="instagram"  src="/resources/instagram-line.svg" alt=""> Instagram</a>
+            <a href="https://wa.me/522721248401" target="_blank">   <img id="logo2" src="/resources/1whatsapp-fill.svg" alt="">    WhatsApp</a>
+            <img class="imagenPersonalizada" src="/resources/el ricon del cafe .png" alt="">
+
+        </div>
+    </footer>
+    
+    <script src="/JavaScript/JavaScript.js"></script>
+
+</body>
+</html>

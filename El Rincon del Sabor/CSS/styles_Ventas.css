@@ -1,0 +1,225 @@
+/* Estilos generales */
+body {
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f1e5; /* Un tono cálido */
+    color: #793d20; /* Marrón oscuro para el texto */
+}
+
+header {
+    background-color: #6c4836;
+    color: #f8f6f5;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    /* Estilos para el encabezado */
+    header {
+        text-align: center;
+    }
+    /* Estilos para las categorías */
+    .categoria {
+        flex-direction: column;
+        align-items: center;
+    }
+    /* Estilos para los productos */
+    .producto {
+        flex: 1 1 100%;
+    }
+}
+
+/* Estilos para tabletas */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Puedes agregar estilos específicos para tabletas aquí */
+}
+
+/* Estilos para pantallas de escritorio */
+@media only screen and (min-width: 1025px) {
+    /* Puedes agregar estilos específicos para pantallas de escritorio aquí */
+}
+
+  button[type="submit"]{
+    padding: 10px 20px;
+    background-color: #c77661;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color:#c77661;
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 60px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+#catalogo {
+    background-color: #f8f1e5; /* Un tono cálido */
+    flex: 1;
+    margin-right: 20px;
+}
+
+#catalogo h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+#catalogo .producto {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#catalogo .producto img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+#catalogo .producto h3 {
+    margin: 10px 0;
+}
+
+#catalogo .producto p {
+    margin: 5px 0;
+}
+
+/* Estilo para las imágenes en el menú */
+#menu img {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efecto de escala al pasar el ratón sobre la imagen */
+#menu img:hover {
+    transform: scale(1.2);
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #f8f1e5;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #793d20;
+  }
+
+#catalogo .producto .agregarCarrito {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#catalogo .producto .agregarCarrito:hover {
+    background-color: #444;
+}
+
+#carrito {
+    flex: 0 0 300px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#carrito h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+#listaCarrito {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#listaCarrito li {
+    margin-bottom: 5px;
+}
+
+#listaCarrito .eliminarProducto {
+    background-color: #cc0000;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 3px 6px;
+    cursor: pointer;
+}
+
+#listaCarrito .eliminarProducto:hover {
+    background-color: #ff3333;
+}
+
+#totalCarrito {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #6c4836;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position:static;
+    bottom: 0;
+    width: 100%;
+    font-family: cursive;
+}
+
+
+

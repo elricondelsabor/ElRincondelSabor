@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Cafetería 2D</title>
+    <link rel="stylesheet" href="/CSS/styles_Juego.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Juego de Cafetería 2D</h1>
+        <p id="score">Puntuación: 0</p>
+        <p id="level">Nivel: 1</p>
+        <div id="gameArea" class="game-area">
+            <div id="player" class="player"></div>
+            <div id="coffeeCup" class="coffee-cup"></div>
+        </div>
+        <div class="controls">
+            <button class="control-btn" id="upBtn">↑</button>
+            <button class="control-btn" id="leftBtn">←</button>
+            <button class="control-btn" id="downBtn">↓</button>
+            <button class="control-btn" id="rightBtn">→</button>
+        </div>
+        <button id="startButton" class="btn">Iniciar Juego</button>
+        <div id="tutorialArea" class="tutorial-area">
+            <h2>Cómo Jugar</h2>
+            <p>Usa los botones de flecha para mover al personaje y recoge todas las tazas de café para ganar puntos y avanzar de nivel.</p>
+        </div>
+    </div>
+    <script src="/JavaScript/script.js"></script>
+</body>
+</html>

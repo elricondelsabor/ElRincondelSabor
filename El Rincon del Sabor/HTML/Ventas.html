@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventas</title>
+    <link rel="stylesheet" href="/CSS/styles_Ventas.css">
+    <link rel="icon" type="image/png" href="/resources/el rincon del sabor.png">
+</head>
+<body>
+
+
+    <header>
+        <h1>Ventas</h1>
+        <button type="submit" href="index.html" ><a href="/HTML/index.html">Regresar</a></button>
+    </header>
+
+    <main>
+        <section id="catalogo">
+            <h2>Catálogo de Productos</h2>
+    
+            <div class="categoria">
+                <h3>Bebidas Calientes</h3>
+                <div class="producto" data-nombre="Café Americano" data-precio="38.00">
+                    <img src="/resources/Cafe americano.png" alt="Café Americano">
+                    <p>Café Americano - $38.00</p>
+                    <button class="agregarCarrito">Agregar al carrito</button>
+                </div>
+                <div class="producto" data-nombre="Expreso" data-precio="25.00">
+                    <img src="/resources/descarga.jfif" alt="Expreso">
+                    <p>Expreso - $25.00</p>
+                    <button class="agregarCarrito">Agregar al carrito</button>
+                </div>
+                <div class="producto" data-nombre="Latte" data-precio="50.00">
+                    <img src="/resources/descarga (1).jfif" alt="Latte">
+                    <p>Latte - $50.00</p>
+                    <button class="agregarCarrito">Agregar al carrito</button>
+                </div>
+            </div>
+        
+            <div class="categoria">
+                <h3>Bebidas Frías</h3>
+                <div class="producto" data-nombre="Café helado" data-precio="60.00">
+                    <img src="/resources/descarga (2).jfif" alt="Café helado">
+                    <p>Café helado - $60.00</p>
+                    <button class="agregarCarrito">Agregar al carrito</button>
+                </div>
+                <div class="producto" data-nombre="Frappé de café" data-precio="40.00">
+                    <img src="/resources/descarga (3).jfif" alt="Frappé de café">
+                    <p>Frappé de café - $40.00</p>
+                    <button class="agregarCarrito">Agregar al carrito</button>
+                </div>
+                <div class="producto" data-nombre="Té helado" data-precio="25.00">
+                    <img src="/resources/descarga (4).jfif" alt="Té helado">
+                    <p>Té helado - $25.00</p>
+                    <button class="agregarCarrito">Agregar al carrito</button>
+                </div>
+            </div>
+        
+            <div class="categoria">
+                <h3>Acompañamientos</h3>
+                <div class="producto" data-nombre="Croissants" data-precio="30.00">
+                    <img src="/resources/croissants.jfif" alt="Croissants">
+                    <p>Croissants - $30.00</p>
+                    <button class="agregarCarrito">Agregar al carrito</button>
+                </div>
+                <div class="producto" data-nombre="Muffins" data-precio="40.00">
+                    <img src="/resources/muffins.jfif" alt="Muffins">
+                    <p>Muffins - $40.00</p>
+                    <button class="agregarCarrito">Agregar al carrito</button>
+                </div>
+                <div class="producto" data-nombre="Galletas caseras" data-precio="30.00">
+                    <img src="/resources/galletas caseras.jfif" alt="Galletas caseras">
+                    <p>Galletas caseras - $30.00</p>
+                    <button class="agregarCarrito">Agregar al carrito</button>
+                </div>
+            </div>
+        
+            <div class="categoria">
+                <h3>Sándwiches y Paninis</h3>
+                <div class="producto" data-nombre="Sándwich de pollo a la parrilla" data-precio="30.00">
+                    <img src="/resources/sandwich de pollo a la parrilla.jfif" alt="Sándwich de pollo a la parrilla">
+                    <p>Sándwich de pollo a la parrilla - $30.00</p>
+                    <button class="agregarCarrito">Agregar al carrito</button>
+                </div>
+                <div class="producto" data-nombre="Panini de jamón y queso" data-precio="20.00">
+                    <img src="/resources/Panini de jamón y queso.jfif" alt="Panini de jamón y queso">
+                    <p>Panini de jamón y queso - $20.00</p>
+                    <button class="agregarCarrito">Agregar al carrito</button>
+                </div>
+                <div class="producto" data-nombre="Vegetariano" data-precio="50.00">
+                    <img src="/resources/Vegetariano (con aguacate, queso y vegetales).jfif" alt="Vegetariano">
+                    <p>Vegetariano - $50.00</p>
+                    <button class="agregarCarrito">Agregar al carrito</button>
+                </div>
+            </div>
+        
+
+            </div>
+            <style>
+            .categoria {
+                display: flex; /* Utiliza flexbox para colocar los elementos en una fila */
+                flex-wrap: wrap; /* Permite que los elementos se envuelvan a una nueva línea si no caben en la misma */
+                gap: 20px; /* Espacio entre las imágenes */
+            }
+
+            .producto {
+                flex: 1 1 200px; /* Flex-grow, flex-shrink, flex-basis (ajustar según el diseño deseado) */
+                text-align: center; /* Centra el contenido horizontalmente */
+                transition: transform 0.3s ease; /* Agrega una transición para el efecto */
+            }
+
+            .producto img {
+                width: 100%; /* Ajusta el ancho de las imágenes al 100% del contenedor */
+                height: auto; /* Ajusta automáticamente la altura */
+                border-radius: 5px; /* Aplica un borde redondeado a las imágenes */
+            }
+            .producto:hover {
+                transform: scale(1.1);
+            }
+          </style>
+    
+
+        </section>
+        
+        
+        
+
+        <aside id="carrito">
+            <h2>Carrito de Compras</h2>
+            <ul id="listaCarrito">
+                <!-- Los productos seleccionados se agregan aquí -->
+            </ul>
+            <p>Total: <span id="totalCarrito">$0.00</span></p>
+            <button id="vaciarCarrito">Vaciar Carrito</button>
+            <button id="comprar">Comprar</button>
+        </aside>
+    </main>
+
+        <footer>
+            <p>&copy; 2024 Cafetería Ejemplo. Todos los derechos reservados.</p>
+        </footer>
+<!-- Modal -->
+<div id="modalQR" style="display: none;">
+    <div id="modalContent">
+        <p>Puedes continuar aquí o también puedes escanear el siguiente código QR para continuar con la venta:</p>
+        <div id="qrcode"></div>
+        <button id="finalizarCompra">Finalizar Compra</button>
+    </div>
+</div>
+
+<script src="/JavaScript/Ventas.js"></script>
+</body>
+</html>

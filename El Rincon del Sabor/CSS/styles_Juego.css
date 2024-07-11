@@ -1,0 +1,223 @@
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f8f1e5; /* Fondo cálido */
+  color: #6c4836; /* Texto marrón oscuro */
+}
+
+.container {
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.control-btn {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 15px;
+  margin: 5px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.control-btn:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+
+.btn {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px 0;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.game-area {
+  width: 600px;
+  height: 400px;
+  border: 2px solid #6c4836;
+  position: relative;
+  background-color: #fff;
+  margin-top: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+.player, .coffee-cup {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.player {
+  background-image: url('/resources/97abda928fc04433d722d48ff514f0fd.jpg');
+}
+
+.coffee-cup {
+  background-image: url('/resources/a86bf107f9d5be6dd828d4c12bfed760.jpg');
+}
+
+.tutorial-area {
+  margin-top: 40px;
+  padding: 20px;
+  border: 2px solid #6c4836;
+  background-color: #fff;
+  width: 600px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+.tutorial-area h2 {
+  color: #6c4836;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.control-btn {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 15px;
+  margin: 5px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.control-btn:hover {
+  background-color: #0056b3;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f8f1e5; /* Fondo cálido */
+  color: #6c4836; /* Texto marrón oscuro */
+}
+
+.container {
+  text-align: center;
+}
+
+.btn {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px 0;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.game-area {
+  width: 600px;
+  height: 400px;
+  border: 2px solid #6c4836;
+  position: relative;
+  background-color: #fff;
+  margin-top: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+.player, .coffee-cup {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.player {
+  background-image: url('player.png');
+}
+
+.coffee-cup {
+  background-image: url('coffee-cup.png');
+}
+
+.tutorial-area {
+  margin-top: 40px;
+  padding: 20px;
+  border: 2px solid #6c4836;
+  background-color: #fff;
+  width: 600px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+.tutorial-area h2 {
+  color: #6c4836;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.control-btn {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 15px;
+  margin: 5px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.control-btn:hover {
+  background-color: #0056b3;
+}
